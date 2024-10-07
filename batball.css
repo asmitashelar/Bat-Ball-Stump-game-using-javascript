@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(ground.jpg);
+    background-size: cover;
+    object-fit: cover;
+}
+h1{
+    text-align: center;
+}
+#ball{
+    
+    height: 200px;
+    width: 200px;
+    background-image: url('ball.jpg');
+   background-size: cover;
+   object-fit: cover;
+   border-radius: 50%;
+}
+#bat{
+    
+    height: 200px;
+    width: 200px;
+    background-image: url('bat.png');
+   background-size: cover;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+#stump{
+    
+    height: 200px;
+    width: 200px;
+    background-image: url('stump.jpg');
+    margin:2 px;
+   background-size:contain;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+.batballcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10 px;
+    padding: 10px ;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+   
+}
+#disp{
+    color: blue;
+    font-size: 50px;
+
+}

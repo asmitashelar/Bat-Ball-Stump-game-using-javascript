@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="batball.css"
+</head>
+<body>
+    <h1> Bat Ball Stump Game</h1>
+  
+    <div class="batballcontainer">
+    
+    <button id="bat" onclick="
+    console.log('you have chosen bat');
+    let randomno=Math.random()*3;
+    
+    if (randomno>0 && randomno<=1)
+    {
+        compchoice='bat';
+       
+    }
+    else if(randomno>1 && randomno<=2){
+        compchoice='ball';
+       
+    }
+
+    else {
+        compchoice='stump';
+       
+    }
+    if (compchoice==='ball')
+    {
+        resultmsg='user won';
+    }
+    else if(compchoice==='bat')
+    {
+        resultmsg='game is tie';
+    }
+    else if(compchoice==='stump')
+    {
+        resultmsg='computer won';
+    }
+
+    res.innerText=`computer choice is ${compchoice} and  you have chosen bat `;
+    disp1.innerText=(`${resultmsg}`);">Bat</button>
+  
+
+    <div class="ballcls">
+    <button id="ball" onclick="
+    console.log('you have chosen ball');
+    let compchoice;
+    randomno=Math.random()*3;
+    let userchoice='ball';
+    let resultmsg;
+   
+    if (randomno>0 && randomno<=1)
+    {
+        compchoice='bat';
+       
+    }
+    else if(randomno>1 && randomno<=2){
+        compchoice='ball';
+       
+    }
+
+    else {
+        compchoice='stump';
+       
+    }
+    if (compchoice==='ball')
+    {
+        resultmsg='game tied';
+    }
+    else if(compchoice==='bat')
+    {
+        resultmsg='computer won';
+    }
+    else if(compchoice==='stump')
+    {
+        resultmsg='user  won';
+    }
+
+    res.innerText=`computer choice is ${compchoice} and  you have chosen ball  `;
+    disp1.innerText=(`${resultmsg}`);  ">
+    Ball </button>
+</div>
+    <button id="stump" onclick=" console.log('you have chosen stump');
+    randomno=Math.random()*3;
+    
+    if (randomno>0 && randomno<=1)
+    {
+        compchoice='bat';
+       
+    }
+    else if(randomno>1 && randomno<=2){
+        compchoice='ball';
+       
+    }
+
+    else {
+        compchoice='stump';
+       
+    }
+    if (compchoice==='ball')
+    {
+        resultmsg='computer won';
+    }
+    else if(compchoice==='bat')
+    {
+        resultmsg='user is won';
+    }
+    else if(compchoice==='stump')
+    {
+        resultmsg='game tied';
+    }
+
+    res.innerText=(`computer choice is ${compchoice}  and  you have chosen bat`);   disp1.innerText=(`${resultmsg}`);" >Stump</button>
+   
+    </div>
+  <p id="result"></p>
+  <h1 id="disp"></h1>
+    
+</body>
+<script>
+    res=document.querySelector("#result");
+    disp1=document.querySelector("#disp");
+    
+    </script></html>
